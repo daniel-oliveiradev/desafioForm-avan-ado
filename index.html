@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação Mentoria</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/img1.png" type="image/x-icon">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Avalie a sua mentoria</h1>
+
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+
+      <img src="images/img1.png" alt="Balão de fala com cinco estrelas dentro sendo três estrelas na cor branca e as demais mais opaca.">
+      
+      <div class="top">
+        Informações pessoais
+      </div>
+    </header> 
+
+    <form id="info">
+      <fieldset>
+        <div class="name-wrapper">
+          <div class="input-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" required>
+          </div>
+
+          <div class="input-group">
+            <label for="subname">Sobrenome</label>
+            <input type="text" id="subname" required>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="email">E-mail <span>(digite um e-mail válido)</span></label>
+          <input type="email" id="email" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações do Mentor</legend>
+
+        <div class="input-group">
+          <label for="mentor">Selecione quem foi o seu mentor</label>
+          <select id="mentor" required>
+            <option value="person1">Mario Quintana</option>
+            <option value="person2">Carlos Magalhães</option>
+            <option value="person3">Patrícia Azevedo</option>
+          </select>
+        </div>
+      
+        <div class="input-group">
+          <label for="feedback">Feedback sobre o mentor</label>
+          <textarea id="feedback" required></textarea>
+        </div>
+
+        <div class="check-box">
+          <input type="checkbox" id="check">
+          <label for="check">Todas as minhas dúvidas foram esclarecidas durante a mentoria</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Agendando próxima mentoria</legend>
+
+        <div class="schedule">
+          <div class="input-group">
+            <label for="date">Data</label>
+            <input type="date" id="date">
+          </div>
+
+          <div class="hours">
+            <div class="input-group">
+              <label for="begin">Das</label>
+              <input type="time" id="begin">
+            </div>
+  
+            <div class="input-group">
+              <label for="end">Até</label>
+              <input type="time" id="end">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <button>Salvar</button>
+    </form>
+
+  </div>
+
+</body>
+</html>
